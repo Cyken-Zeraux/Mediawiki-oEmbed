@@ -6,7 +6,9 @@ This is also here because currently, oembed does not work well with Mediawiki.
 Problems:
 
 **1. oEmbed requires a seperate network request for every embed URL.**
-  * This can be done using MWHttpRequest.
+  * This can be done to standard using MWHttpRequest.
+  * Multiple embeds can cause a edit publish delay because the requests are synchronous
+  * It is not possible to standard to use something like multi curl with Mediawiki hooks.
   
 **2. oEmbed response must be cached. If it is not, then every edit must make the requests again, a severe performance problem.**
   * Caching can be done using ObjectCache::getMainWANInstance(), and simply checking hashes.
