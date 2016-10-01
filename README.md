@@ -1,7 +1,6 @@
 # Mediawiki-oEmbed
 
-This is here simply to explain the state of oembed and how it could potentially work with Mediawiki.
-This is also here because currently, oembed does not work well with Mediawiki.
+These are the findings of developing an oEmbed extension for Mediawiki.
 
 Problems:
 
